@@ -1,0 +1,282 @@
+/*----------------------------------- GERAL -----------------------------------*/
+
+/*---------- Fontes ----------*/
+@font-face{
+    font-family: "IBM Light";
+    src: url("../Fontes/IBMPlexSans-Light.ttf");
+}
+
+@font-face{
+    font-family: "IBM Medium";
+    src: url("../Fontes/IBMPlexSans-Medium.ttf");
+}
+
+@font-face{
+    font-family: "IBM Bold";
+    src: url("../Fontes/IBMPlexSans-Bold.ttf");
+}
+
+@font-face{
+    font-family: "Lato Black";
+    src: url("../Fontes/Lato-Black.ttf");
+}
+
+@font-face{
+    font-family: "Lato Bold";
+    src: url("../Fontes/Lato-Bold.ttf");
+}
+
+/*---------- Cores ----------*/
+.cinza1D{
+    color: rgb(29, 29, 29);
+}
+
+.cinza70{
+    color: rgb(112, 112, 112);
+}
+
+.cinza4D{
+    color: rgb(77, 77, 77);
+}
+
+.douradoB4{
+    color: rgb(180, 125, 51);
+}
+
+.douradoB1{
+    color: rgb(177, 126, 59);
+}
+
+.douradoA9{
+    color: rgb(169, 115, 57);
+}
+
+.branco{
+    color: rgb(255, 255, 255);
+}
+
+.branco{
+    color: rgb(0, 0, 0);
+}
+
+/*---------- Classes ----------*/
+.T1{
+    font-family: "IBM Bold";
+    font-size: 25px;
+    text-transform: uppercase;
+    color: rgb(77, 77, 77);
+}
+
+.P{
+    font-family: "IBM Light";
+    font-size: 13px;
+    color: rgb(77, 77, 77);
+}
+
+/*----------------------------------- FOOTER -----------------------------------*/
+footer{
+    padding: 0px 55px !important;
+    margin-bottom: 70px;
+}
+/*---------- Navbar ----------*/
+.footer-navbar-menus{
+    font-family: "Lato Black";
+    font-size: 16px;
+    text-transform: uppercase;
+    color: rgb(77, 77, 77);
+    margin: 0px 14px;
+    padding: 25px 0px;
+}
+
+.footer-navbar-menus:hover{
+    color: rgb(180, 125, 51);
+}
+
+.footer-navbar{
+    border-top: 1px solid rgb(112, 112, 112);
+    border-bottom: 1px solid rgb(112, 112, 112);
+    margin-bottom: 50px;
+}
+
+/*---------- Contactos e Redes Sociais ----------*/
+.footer-contactos{
+    padding-left: 28px !important;
+}
+
+.footer-contactos .T1, .footer-redes-sociais .T1{
+    font-size: 20px !important;
+    margin-bottom: 20px;
+}
+
+.footer-redes-sociais-seguir{
+    margin-bottom: 30px !important;
+    /* padding-left: 50px !important; */
+    text-align: center;
+
+}
+/* 
+.footer-redes-sociais{
+    padding-left: 50px !important;
+} */
+
+.footer-contactos-titulo{
+    font-family: "IBM Medium";
+    font-size: 15px;
+    color: rgb(177, 126, 59);
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.footer-contactos-paragrafo{
+    font-family: "IBM Light";
+    font-size: 15px;
+    color: rgb(77, 77, 77);
+    text-transform: none;    
+    margin: 0 20px 0 0;
+}
+
+.footer-rede-social-instagram, .footer-rede-social-facebook, .footer-rede-social-linkedin{
+    width: 37px;
+    height: 37px;
+    background-repeat: no-repeat;
+    margin-right: 24px;
+}
+
+.footer-rede-social-instagram{
+    background-image: url("../Imagens/Desktop/instagram1.svg");
+}
+
+.footer-rede-social-instagram:hover{
+    background-image: url("../Imagens/Desktop/instagram2.svg");
+}
+
+.footer-rede-social-facebook{
+    background-image: url("../Imagens/Desktop/facebook1.svg");
+}
+
+.footer-rede-social-facebook:hover{
+    background-image: url("../Imagens/Desktop/facebook2.svg");
+}
+
+.footer-rede-social-linkedin{
+    background-image: url("../Imagens/Desktop/linkedin1.svg");
+}
+
+.footer-rede-social-linkedin:hover{
+    background-image: url("../Imagens/Desktop/linkedin2.svg");
+}
+
+/*---------- Livro Reclamações, RALC, Política de Cookies e Copyright ----------*/
+.footer-reclamacao-ralc{
+    padding: 0px 0px 0px 28px;
+    margin-top: 55px;
+}
+
+.footer-reclamacao{
+    background-image: url("../Imagens/Desktop/livroreclamacoes.svg");
+    background-repeat: no-repeat;
+    width: 81px;
+    height: 34px;
+}
+
+.footer-ralc{
+    background-image: url("../Imagens/Desktop/ralc.svg");
+    background-repeat: no-repeat;
+    width: 130px;
+    height: 32px;
+    margin-left: 44px;
+}
+
+.footer-cookies-copyright{
+    text-align: center;
+    margin-top: 65px;
+    margin-bottom: 0px;
+}
+
+.active{
+    color: rgb(180, 125, 51) !important;
+}
+
+@media all and (max-width: 991px){
+    .footer-contactos{
+        padding: 0px !important;
+    }
+    .footer-contactos-titulo-geral{
+        text-align: center;
+        margin-bottom: 30px !important;
+    }
+
+    .footer-redes-sociais-seguir{
+        margin-top: 50px;
+    }
+
+    .footer-reclamacao-ralc{
+        padding: 0;
+    }
+
+    .footer-cookies-copyright{
+        margin-top: 70px;
+    }
+}
+
+
+
+@media all and (max-width: 767px){
+
+    footer{
+        padding: 0px 35px !important;
+    }
+
+    .footer-linha{
+        margin: 60px 0px;
+        background-color: rgb(112, 112, 112);
+        height: 0.9px;
+    }
+
+    .footer-cookies-copyright{
+        margin-top: 80px;
+    }
+
+    /* .footer-redes-sociais-seguir{
+        margin-top: 0 !important;
+    } */
+
+}
+
+@media all and (max-width: 575px){
+    footer{
+        margin-bottom: 60px;
+    }
+
+    .footer-contactos{
+        text-align: center;
+    }
+
+    .footer-contactos-titulo-geral{
+        margin-bottom: 20px !important;
+    }
+
+    .footer-contactos-paragrafo{
+        margin: 0 0 20px 0 !important;
+    }
+
+    .footer-redes-sociais-seguir{
+        margin-top: 10px !important;
+    }
+
+    .footer-reclamacao-ralc{
+        justify-content: center;
+        margin-top: 65px;
+    }
+
+    .footer-cookies-copyright{
+        margin-top: 43px;
+    }
+
+    .footer-redes-sociais{
+        margin-top: 35px;
+    }
+
+
+
+}

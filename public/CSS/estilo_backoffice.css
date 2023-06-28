@@ -1,0 +1,332 @@
+@font-face{
+    font-family: "IBM Light";
+    src: url("../Fontes/IBMPlexSans-Light.ttf");
+}
+
+@font-face{
+    font-family: "IBM Medium";
+    src: url("../Fontes/IBMPlexSans-Medium.ttf");
+}
+
+@font-face{
+    font-family: "IBM Bold";
+    src: url("../Fontes/IBMPlexSans-Bold.ttf");
+}
+
+@font-face{
+    font-family: "Lato Black";
+    src: url("../Fontes/Lato-Black.ttf");
+}
+
+@font-face{
+    font-family: "Lato Bold";
+    src: url("../Fontes/Lato-Bold.ttf");
+}
+
+body{
+    background-image: url("../Imagens/Backoffice/fundo-2-opacidade-10.jpg");
+    /* padding: 0 10%; */
+    
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+}
+
+.footer {
+    /* margin-top: 50px; */
+    flex-shrink: 0;
+    height: 24px;
+    background-color: rgba(0, 0, 0, 0.11);
+
+}
+
+/* main{
+    padding-bottom: 50px;
+} */
+
+.mb-4{
+    margin: 40px 0 !important;
+}
+
+.margem{
+    padding: 0 10%;
+}
+
+.linha{
+    margin: 10px 0;
+}
+
+button{
+    border: 0;
+    background-color: transparent;
+}
+
+small{
+    font-family: "IBM Light";
+    font-weight: 400;
+}
+
+/*----------------------------------- INDEX -----------------------------------*/
+
+.index-header{
+    width: 360px;
+    /* border: 2px solid rgb(180, 125, 51); */
+    border-top-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.15);
+
+}
+
+.index-header-caixa{
+    background-color: rgb(180, 125, 51);
+    padding: 20px 0;
+    border-top-left-radius: 78px;
+}
+
+.index-header-caixa-titulo-1{
+    font-family: "IBM Light";
+    color: white;
+}
+
+.index-header-caixa-titulo-2{
+    font-family: "IBM Bold";
+    color: white;
+}
+
+.index-header-caixa-linha{
+    color: white;
+    width: 250px;
+}
+
+.index-header-login{
+    background-color: white;
+    border-bottom-right-radius: 78px;
+    font-family: "IBM Medium";
+    padding: 20px 0;
+}
+
+.index-header-login-invalido{
+    margin: 10px 0;
+    font-family: "IBM Bold";
+}
+
+input{
+    border: 0;
+    border-bottom: 1px solid rgb(180, 125, 51);
+    text-align: center;
+}
+
+.input-editar, select{
+    border: 0;
+    background-color: rgba(180, 124, 51, 0.1);
+    border-radius: 10px;
+}
+
+select{
+    width: 90%;
+    text-align: center;
+}
+
+input:focus, textarea:focus{
+    outline: 0;
+}
+
+textarea{
+    width:  90%; 
+    height: 300px
+}
+
+.index-header-login-botao{
+    border: 1px solid rgb(180, 125, 51);
+    color: rgb(180, 125, 51);
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition-duration: 0.5s;
+    background-color: rgba(180, 124, 51, 0.05);
+    
+}
+
+.index-header-login-botao:hover{
+    background-color: rgb(180, 125, 51);
+    color: white;
+}
+
+/*----------------------------------- INÍCIO -----------------------------------*/
+
+.header-data{
+    padding: 0 3%;
+}
+
+.icon-data{
+    width: 24px;
+    padding-right: 5px;
+}
+
+.texto-data{
+    color: white;
+    font-size: 12px;
+
+}
+
+.linha-header{
+    color: white;
+    margin: 10px 3%;
+}
+
+
+.sombra{
+    box-shadow: 0px -15px 20px 6px rgba(0, 0, 0, 0.25);
+}
+
+.inicio-header-caixa{
+    background-color: rgb(180, 125, 51);
+    padding: 10px 0 20px 0;
+    width: 100%;
+}
+
+.inicio-header-navbar{
+    margin: 20px 0 0 0;
+}
+
+.inicio-header-link{
+    color: white;
+    text-decoration: none;
+    font-family: "IBM Medium";
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 4px 8px;
+    border-radius: 50px;
+}
+
+.inicio-header-link:hover, .active{
+    color: rgb(180, 125, 51);
+    background-color: white;
+}
+
+.saida:hover{
+    color: red !important;
+}
+
+.inicio-main{
+    background-color: white;
+}
+
+.inicio-main-texto{
+    font-family: "IBM Medium";
+    margin: 100px 0;
+}
+
+/*----------------------------------- CAROUSEL -----------------------------------*/
+
+.carousel-listar-imagem-desktop{
+    width: 100px;
+}
+
+.carousel-listar-imagem-mobile{
+    width: 50px;
+}
+
+table, td, th{
+    border: 1px solid black;
+    border-collapse: collapse;
+    /* padding: 10px; */
+    text-align: center;
+}
+
+table{
+    margin: 20px 0;
+    width: 96%;
+}
+
+
+td{
+    padding: 10px !important;
+}
+
+tr:nth-child(even) {
+    background:rgba(180, 125, 51, 0.12);
+}
+
+th, tr:hover{
+    background-color: rgba(180, 125, 51, 0.35);
+}
+
+td:hover{
+    background-color: rgba(180, 125, 51, 0.5);
+}
+
+.carousel-listar-icon{
+    background-color: rgb(180, 125, 51);
+    margin: 5px;
+    border-radius: 50%;
+    border: 5px solid rgb(180, 125, 51);
+    width: 40px;
+}
+
+.carouse-editar-titulo{
+    font-family: "IBM Light";
+    margin: 15px 0;
+
+}
+
+.mensagem, label{
+    font-family: "IBM Bold";
+}
+
+.mensagem-2{
+    font-family: "IBM Light";
+    text-align: center;
+}
+
+.autor-paragrafo > p, .home-paragrafo{
+    font-family: "IBM Light";
+    padding: 0 60px;
+    text-align: justify;
+}
+
+hr{
+    width: 94%;
+    margin: 20px auto;
+    color: rgb(180, 125, 51);
+}
+
+.ck-toolbar{
+    background-color:rgba(180, 124, 51, 0.1) !important;
+    width: 90% !important;    
+}
+
+.ck-editor__main{
+    width: 90% !important;  
+}
+
+.ck{
+    margin: auto !important;
+}
+
+.morada > p{
+    text-align: center;
+}
+
+
+@media (min-width: 1400px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 100%;
+    }
+}
+
+@media (min-width: 576px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 100%;
+    }
+}
+

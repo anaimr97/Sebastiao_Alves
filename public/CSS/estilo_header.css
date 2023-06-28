@@ -1,0 +1,376 @@
+/*----------------------------------- GERAL -----------------------------------*/
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*---------- Fontes ----------*/
+@font-face{
+    font-family: "IBM Light";
+    src: url("../Fontes/IBMPlexSans-Light.ttf");
+}
+
+@font-face{
+    font-family: "IBM Medium";
+    src: url("../Fontes/IBMPlexSans-Medium.ttf");
+}
+
+@font-face{
+    font-family: "IBM Bold";
+    src: url("../Fontes/IBMPlexSans-Bold.ttf");
+}
+
+@font-face{
+    font-family: "Lato Black";
+    src: url("../Fontes/Lato-Black.ttf");
+}
+
+@font-face{
+    font-family: "Lato Bold";
+    src: url("../Fontes/Lato-Bold.ttf");
+}
+
+/*---------- Cores ----------*/
+.cinza1D{
+    color: rgb(29, 29, 29);
+}
+
+.cinza70{
+    color: rgb(112, 112, 112);
+}
+
+.cinza4D{
+    color: rgb(77, 77, 77);
+}
+
+.douradoB4{
+    color: rgb(180, 125, 51);
+}
+
+.douradoB1{
+    color: rgb(177, 126, 59);
+}
+
+.douradoA9{
+    color: rgb(169, 115, 57);
+}
+
+.branco{
+    color: rgb(255, 255, 255);
+}
+
+.branco{
+    color: rgb(0, 0, 0);
+}
+
+/*---------- Classes ----------*/
+.T1{
+    font-family: "IBM Bold";
+    font-size: 25px;
+    text-transform: uppercase;
+    color: rgb(77, 77, 77);
+}
+
+.P{
+    font-family: "IBM Light";
+    font-size: 13px;
+    color: rgb(77, 77, 77);
+}
+
+/*----------------------------------- HEADER -----------------------------------*/
+/*---------- Topo ----------*/
+
+.header-topo{
+    position: absolute;
+    z-index: 10;
+}
+
+.header-topo-titulo{
+    margin-top: 52px !important;
+    font-family: "IBM Bold";
+    font-size: 35px;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(77, 77, 77);
+}
+
+.header-topo-linha{
+    background-color: rgb(112, 112, 112);
+    height: 1px;
+    margin: 10px 55px 15px 55px;
+}
+
+/*---------- Navbar ----------*/
+.header-topo-navbar-menu{
+    font-family: "Lato Black";
+    font-size: 18px;
+    text-transform: uppercase;
+    color: rgb(77, 77, 77) !important;
+    padding: 0px 17px !important;
+}
+
+.header-topo-navbar-menu:hover{
+    color: rgb(180, 125, 51) !important;
+}
+
+.header-topo-navbar-submenu{
+    font-family: "IBM Medium";
+    font-size: 13px;
+    text-transform: uppercase;
+    color: rgb(77, 77, 77) !important;
+    margin: 7px;
+}
+
+.header-topo-navbar-submenu:hover{
+    color: rgb(177, 126, 59) !important;
+}
+
+.header-topo-navbar-dropdown{
+    background-color: white;
+    border: 0;
+    border-radius: 0;
+    box-shadow: 0px 0px 8px 6px rgba(0, 0, 0, 0.06);
+    margin-top: 7px !important;
+    padding: 20px 10px 15px 10px;
+}
+
+/*---------- Carousel ----------*/
+.header-carousel-img{
+    height: 730px !important;
+}
+
+.header-carousel-info{
+    text-align: left;
+    width: 39%;
+    position: absolute;
+    top: 37%;
+}
+
+.header-carousel-info-novidade{
+    font-family: "Lato Bold";
+    font-size: 14px;
+    color: rgb(180, 125, 51);
+    text-transform: uppercase;
+    height: 30px !important;
+    margin-bottom: 10px;
+}
+
+.header-carousel-info-titulo{
+    font-family: "IBM Light";
+    font-size: 40px;
+    text-transform: uppercase;
+    color: rgb(77, 77, 77);
+}
+
+.header-carousel-info-paragrafo{
+    font-family: "IBM Light";
+    font-size: 13px;
+    color: rgb(77, 77, 77);
+    margin-top: 15px;
+}
+
+.header-carousel-info-botao{
+    background-image: url('../Imagens/Desktop/sabermais1.svg');
+    background-repeat: no-repeat;
+    width: 120px;
+    height: 30px;
+    margin-top: 15px;
+}
+
+.header-carousel-info-botao:hover{
+    background-image: url('../Imagens/Desktop/sabermais2.svg');
+}
+
+.header-carousel-indicadores{
+    position: absolute;
+    bottom: 10%;
+}
+
+.header-carousel-indicadores-icon{
+    background-image: url("../Imagens/Desktop/bolabanner1.svg");
+    background-repeat: no-repeat;
+    height: 20px !important;
+    width: 20px;
+    background-color: transparent !important;
+    margin-right: 15px;
+    transition-duration: 0ms;
+}
+
+.header-carousel-indicadores-icon.active{
+    background-image: url("../Imagens/Desktop/bolabanner2.svg");
+}
+
+.dropdown-menu{
+    --bs-dropdown-link-active-bg:  transparent;
+}
+
+.dropdown-menu .dropdown-item.active {
+    background-color: transparent !important; 
+}
+
+.active{
+    color: rgb(180, 125, 51) !important;
+}
+
+.dropdown-menu li:hover{
+    background-color: #f8f9fa; 
+}
+
+/*---------- Carousel ----------*/
+.header-carousel-img-mobile{
+    height: 760px;
+}
+
+@media all and (max-width: 955px){
+
+    .header-carousel-info-titulo{
+        font-size: 36px;
+    }
+
+}
+
+@media all and (max-width: 860px){
+
+    .header-carousel-info-titulo{
+        font-size: 32px;
+    }
+
+}
+
+@media all and (max-width: 780px){
+
+    .header-carousel-indicadores{
+        bottom: 5%;
+    }
+
+    .header-carousel-info{
+        top: 34%;
+    }
+
+}
+
+@media all and (max-width: 767px){
+
+    .header-topo-titulo{
+        margin-top: 70px !important;
+        font-size: 30px;
+        text-align: left;
+        padding: 0px 55px;
+    }
+
+    /*---------- Navbar ----------*/
+    .navbar-toggler{
+        width: 65px;
+    }
+
+    .navbar-toggler-icon{
+        background-image: url('../Imagens/Mobile/menu.svg');
+        background-repeat: no-repeat;
+        width: 35px;
+    }
+
+    .navbar{
+        width: 100% !important;
+    }
+
+    .navbar-collapse{
+        background-color: white;
+        padding: 25px 35px;
+        margin-top: -16px;
+        box-shadow: 0px 6px 8px 0px rgba(0, 0, 0, 0.1);
+
+    }
+
+    .header-topo-navbar-menu{
+        padding: 8px 0px !important;
+    }
+}
+
+@media all and (max-width: 670px){
+
+    .header-carousel-info-titulo{
+        font-size: 30px;
+    }
+
+    .header-carousel-info{
+        top: 30%;
+    }
+}
+
+@media all and (max-width: 575px){
+    /*----------------------------------- GERAL -----------------------------------*/
+    /*---------- Classes ----------*/
+    .T1{
+        font-size: 22px;
+    }
+
+    /*----------------------------------- HEADER -----------------------------------*/
+    /*---------- Topo ----------*/
+    .header-topo-titulo{
+        margin-top: 70px !important;
+        font-size: 24px;
+        padding: 0px 25px;
+    }
+
+    .header-topo-linha{
+        margin: 15px 35px;
+    }
+
+
+    /*---------- carousel ----------*/
+    .header-carousel-info{
+        width: 100% !important;
+        top: 53%;
+        left: 0%;
+        padding: 0px 35px !important;
+    }
+
+    .header-carousel-info-novidade{
+        font-size: 13px;
+    }
+
+    .header-carousel-info-titulo{
+        font-size: 30px;
+    }
+
+    .header-carousel-indicadores{
+        bottom: -1%;
+        margin-left: 35px;
+    }
+
+}
+
+
+@media all and (max-width: 380px){
+    /*----------------------------------- HEADER -----------------------------------*/
+    /*---------- Topo ----------*/
+    .header-topo-titulo{
+        font-size: 20px;
+    }
+
+    .header-carousel-info{
+        top: 48%;
+    }
+
+}
+
+@media all and (max-width: 345px){
+    /*----------------------------------- HEADER -----------------------------------*/
+    /*---------- Topo ----------*/
+    .header-topo-titulo{
+        margin-top: 50px !important;
+    }
+    .header-carousel-info-titulo{
+        font-size: 26px;
+    }
+
+    .header-carousel-info-paragrafo{
+        font-size: 12px;
+    }
+
+    .header-carousel-info{
+        top: 46%;
+    }
+
+
+}
